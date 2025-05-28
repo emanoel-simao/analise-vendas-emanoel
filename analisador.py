@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title('Analise de vendas de Emanoel')
 
-uploaded_file = st.file_uploader('Escolha um arquivo do excel', type=["xlsx,", "csv"])
+uploaded_file = st.file_uploader('Escolha um arquivo do excel', type=["xlsx", "csv"])
 
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file, engine='openpyxl')
